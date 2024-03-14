@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Toped" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="966,3144" sap2010:WorkflowViewState.IdRef="Toped_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Toped" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="870,4015" sap2010:WorkflowViewState.IdRef="Toped_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -114,142 +114,185 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Toped" sap:VirtualizedContainerService.HintSize="976,3231" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Toped" sap:VirtualizedContainerService.HintSize="880,3950" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="fileName" />
+      <Variable x:TypeArguments="x:Boolean" Name="rawDataFound" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_pulsaData" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Beli Paket Internet Online Termurah Maret 2024! | Tokopedia" sap:VirtualizedContainerService.HintSize="914,3143" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="198d4ba0-59e1-4a98-8655-b3d9adcb3819" Version="V2">
-      <uix:NApplicationCard.Body>
-        <ActivityAction x:TypeArguments="x:Object">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="880,2902" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="sd:DataTable" Name="dt_pulsaData" />
-              <Variable x:TypeArguments="x:Boolean" Name="fileExist" />
-            </Sequence.Variables>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Nomor Telepon'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="818,259" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="198d4ba0-59e1-4a98-8655-b3d9adcb3819" Text="0812" Version="V3">
-              <uix:NTypeInto.Target>
-                <uix:TargetAnchorable BrowserURL="https://www.tokopedia.com/paket-data/" CvTextArea="465, 1208, 364, 32" CvTextArgument="Contoh 081234567890" CvType="Text" DesignTimeRectangle="468, 922, 1808, 52" DesignTimeScaleFactor="2" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='tel' class='unf-input-control unf-form-control unf-text-input' placeholder='Contoh 081234567890' aaname='' /&gt;" Guid="457452f0-1d06-4c9c-9b18-3bfa953e876b" InformativeScreenshot="5030c5658050fad014432e81513a6837.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Beli Paket Internet Online Termurah Maret 2024! | Tokopedia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CvTextArea="465, 876, 196, 32" CvTextArgument="Nomor Telepon" CvType="Text" DesignTimeRectangle="468, 873, 192, 39" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Nomor Telepon' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Nomor Telepon' tag='SPAN' type='' class='' check:innerText='Nomor Telepon' /&gt;" SearchSteps="FuzzySelector, CV" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NTypeInto.Target>
-            </uix:NTypeInto>
-            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_pulsaData]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='6' /&gt;&lt;webctrl tag='div' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="818,198" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="198d4ba0-59e1-4a98-8655-b3d9adcb3819" Version="V3">
-              <uix:NExtractData.Target>
-                <uix:TargetAnchorable DesignTimeRectangle="21, -308, 2814, 8149" DesignTimeScaleFactor="2" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-role='option' parentid='mainLayout' tag='DIV' /&gt;" Guid="74093b8a-8e23-457a-84cb-bcdf1c5b5d6b" InformativeScreenshot="bdc601c28db6dde2261942f7294cb8b8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Beli Paket Internet Online Termurah Maret 2024! | Tokopedia' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
-              </uix:NExtractData.Target>
-            </uix:NExtractData>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SaveRawData - Invoke Workflow File (SaveRawData.xaml)" sap:VirtualizedContainerService.HintSize="818,154" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="SaveRawData.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="sd:DataTable" x:Key="rawData">
-                  <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="dt_pulsaData" />
-                </InArgument>
-              </ui:InvokeWorkflowFile.Arguments>
-            </ui:InvokeWorkflowFile>
-            <ui:FileExistsX DisplayName="File Exists" Exists="[fileExist]" sap:VirtualizedContainerService.HintSize="818,175" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="resources\Toped_scrapping.xlsx" />
-            <If Condition="[fileExist]" sap:VirtualizedContainerService.HintSize="818,1859" sap2010:WorkflowViewState.IdRef="If_1">
-              <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,253" sap2010:WorkflowViewState.IdRef="Sequence_10">
+    <Assign sap2010:Annotation.AnnotationText="Add a variable to keep consistency for Raw Data filename" DisplayName="Assign Variable for File Name" sap:VirtualizedContainerService.HintSize="818,154" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[fileName]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">["raw_data" + Now.ToString("dd-MM-yyyy") + ".txt"]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <ui:FileExistsX sap2010:Annotation.AnnotationText="Check Raw file, to decide needs to scrapping the original data" DisplayName="File Exists Check Raw File" Exists="[rawDataFound]" sap:VirtualizedContainerService.HintSize="818,219" sap2010:WorkflowViewState.IdRef="FileExistsX_2" Path="[&quot;resources\&quot; + fileName]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:FileExistsX>
+    <If Condition="[rawDataFound]" DisplayName="If Condition - For result checking Raw File exist or not" sap:VirtualizedContainerService.HintSize="818,3489" sap2010:WorkflowViewState.IdRef="If_2">
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="784,1425" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="722,1340" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
+            <ueab:ExcelProcessScopeX.Body>
+              <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,1230" sap2010:WorkflowViewState.IdRef="Sequence_17">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;File Exist&quot;]" />
-                </Sequence>
-              </If.Then>
-              <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="784,1427" sap2010:WorkflowViewState.IdRef="Sequence_9">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="722,1342" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
-                    <ueab:ExcelProcessScopeX.Body>
-                      <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="626,1145" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="resources\Toped_scrapping.xlsx">
+                    <ueab:ExcelApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                         <ActivityAction.Argument>
-                          <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                          <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="TopedExcel" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="688,1232" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,849" sap2010:WorkflowViewState.IdRef="Sequence_16">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="626,1147" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="resources\Toped_scrapping.xlsx">
-                            <ueab:ExcelApplicationCard.Body>
-                              <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_pulsaData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,764" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                            <ui:ForEachRow.Body>
+                              <ActivityAction x:TypeArguments="sd:DataRow">
                                 <ActivityAction.Argument>
-                                  <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="TopedExcel" />
+                                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,851" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,575" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="s:String[]" Name="splitted" />
+                                  </Sequence.Variables>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_pulsaData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="530,766" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
-                                    <ui:ForEachRow.Body>
-                                      <ActivityAction x:TypeArguments="sd:DataRow">
-                                        <ActivityAction.Argument>
-                                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
-                                        </ActivityAction.Argument>
-                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,577" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                                          <Sequence.Variables>
-                                            <Variable x:TypeArguments="s:String[]" Name="splitted" />
-                                          </Sequence.Variables>
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                          <Assign sap:VirtualizedContainerService.HintSize="434,123" sap2010:WorkflowViewState.IdRef="Assign_2">
-                                            <Assign.To>
-                                              <OutArgument x:TypeArguments="s:String[]">[splitted]</OutArgument>
-                                            </Assign.To>
-                                            <Assign.Value>
-                                              <InArgument x:TypeArguments="s:String[]">[Split(CurrentRow.Item(0).ToString, "Rp")]</InArgument>
-                                            </Assign.Value>
-                                          </Assign>
-                                          <ueab:WriteCellX AutoIncrementRow="True" Cell="[TopedExcel.Sheet(&quot;Sheet1&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,201" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[splitted(0)]" />
-                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Package Name: &quot; + splitted(0) + Environment.NewLine +&#xA;&quot;Price: &quot; + splitted(1) + Environment.NewLine +&#xA;&quot;--------------------------------------------------------------&quot;]" />
-                                        </Sequence>
-                                      </ActivityAction>
-                                    </ui:ForEachRow.Body>
-                                  </ui:ForEachRow>
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,123" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="s:String[]">[splitted]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="s:String[]">[Split(CurrentRow.Item(0).ToString, "Rp")]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                  <ueab:WriteCellX AutoIncrementRow="True" Cell="[TopedExcel.Sheet(&quot;Sheet1&quot;).Cell(&quot;A1&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,201" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[splitted(0)]" />
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Package Name: &quot; + splitted(0) + Environment.NewLine +&#xA;&quot;Price: &quot; + splitted(1) + Environment.NewLine +&#xA;&quot;--------------------------------------------------------------&quot;]" />
                                 </Sequence>
                               </ActivityAction>
-                            </ueab:ExcelApplicationCard.Body>
-                          </ueab:ExcelApplicationCard>
+                            </ui:ForEachRow.Body>
+                          </ui:ForEachRow>
                         </Sequence>
                       </ActivityAction>
-                    </ueab:ExcelProcessScopeX.Body>
-                  </ueab:ExcelProcessScopeX>
+                    </ueab:ExcelApplicationCard.Body>
+                  </ueab:ExcelApplicationCard>
                 </Sequence>
-              </If.Else>
-            </If>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="818,170" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Total data : &quot; + dt_pulsaData.RowCount.ToString]" />
-          </Sequence>
-        </ActivityAction>
-      </uix:NApplicationCard.Body>
-      <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-13, -13, 2966, 1522" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAC4iAAAuIgGq4t2SAAADTUlEQVQ4T62SXUxTBxiGVRKTzWhGlo2bmWgQ9qOp0FrKSuH0HHrOaUeB9py2Hg4gFUPQiI1BZWjUYRDjYAq2tCkFw28JMHDDVqEg4A/Dlhp/Loj/yWTBsGTRC72AQfIO2mTZxS52sTd5b7687/MlX741a/5vkSQZS1KUlySo30k19StJUmGSppL+0x7uaM46lTTjlkpKDKfvJBhCplYQcsKVISdesmZ2y79CSsbFz0oDhUTZvb1Kq1M8xmjY38znDR/9M8zoWB9v43qLfPnpBV6RMrfxktzL2TGRTIGf8xRfE5ZLxwqX9t0WUDKZt2h7VPy8JJzXaB40VIlXhLDQa3nLe40o6BGX8jvEZUsHH+Y7DJ9GAMY+toX/WQuiQwaqVYFvegjo+tNhHTPD4jVBVa9E2sVUkHYCstpkaD0MuLacaa5d/0kEYOhjmuTO7Tj642E8mX2CZ3NP0RhsAN2ThlS7HFa3FcGZYGTedqcV8hoZ9Jd1wd1dpigg1SNpOthZioV3i1iV86ILXkc3an85B00DGZktvF+AwAl4PP0Y3skuyOtkweyurChA8kOCe2RmGNd/ug6L2YJtiduQtuNrNAda4bzbBF+3D2K+iLi4OOhoHebfzYO106GE6vgoYGd9otsx2oBXM7OI3RSL9THrcWDvt3BMeXB2ohqdLX6sxLBpw0a02FsQehFCynlZSGlPiQJUTbvcX56Ohz98FXNP5zDQP4HnNwfwx9B2vH4txeIbD0b99zA5PIVHLx6CPqeBsl4xbeo0RAHKBpkrxS7BF2e2wuLhUDxUjlPudPxZtRa4+THcV+LBew+grP0QFFW7IK2RgrmkuU/bqbjoEeuTXakXkrHj+8+R2SxDxbiAygeH0d2vRbfzK+SOCDCOaJHRnALpd1KoapTIuKTyadzkhghAUZfUmHB6K0ztNFwPK3AhZEPt1EEcD5WDm7CiaEzA/ok8HAoVwTyoR3KNZIk5qzH//alJ5ZK+RMdmHLmxG0dWtpcFONgCfMTcVRr6QQoGvwbGIQaWQNZSlk1XbaCNMVw2H31l9R41rz6udAhn9G7uFNvGndR6V9zHnWQHmEr1QGYl0UufIDvZY5q63MIc1iKaPlgpf2jkuHWr/b8AkgqzsldI7mIAAAAASUVORK5CYII=" InformativeScreenshot="f4f1f91c08b393f736b4c674e6cc4bc9.jpg" Selector="&lt;html app='msedge.exe' title='Beli Paket Internet Online Termurah Maret 2024! | Tokopedia' /&gt;" Title="Beli Paket Internet Online Termurah Maret 2024! | Tokopedia" Url="https://www.tokopedia.com/paket-data/" />
-      </uix:NApplicationCard.TargetApp>
-    </uix:NApplicationCard>
+              </ActivityAction>
+            </ueab:ExcelProcessScopeX.Body>
+          </ueab:ExcelProcessScopeX>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="608,1902" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Beli Paket Internet Online Termurah Maret 2024! | Tokopedia" sap:VirtualizedContainerService.HintSize="546,1817" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="198d4ba0-59e1-4a98-8655-b3d9adcb3819" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,1576" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="sd:DataTable" Name="dt_pulsaData" />
+                    <Variable x:TypeArguments="x:Boolean" Name="fileExist" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Nomor Telepon'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,259" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="198d4ba0-59e1-4a98-8655-b3d9adcb3819" Text="0812" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.tokopedia.com/paket-data/" CvTextArea="465, 1208, 364, 32" CvTextArgument="Contoh 081234567890" CvType="Text" DesignTimeRectangle="468, 922, 1808, 52" DesignTimeScaleFactor="2" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='tel' class='unf-input-control unf-form-control unf-text-input' placeholder='Contoh 081234567890' aaname='' /&gt;" Guid="457452f0-1d06-4c9c-9b18-3bfa953e876b" InformativeScreenshot="5030c5658050fad014432e81513a6837.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Beli Paket Internet Online Termurah Maret 2024! | Tokopedia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="465, 876, 196, 32" CvTextArgument="Nomor Telepon" CvType="Text" DesignTimeRectangle="468, 873, 192, 39" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Nomor Telepon' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Nomor Telepon' tag='SPAN' type='' class='' check:innerText='Nomor Telepon' /&gt;" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_pulsaData]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='6' /&gt;&lt;webctrl tag='div' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="198d4ba0-59e1-4a98-8655-b3d9adcb3819" Version="V3">
+                    <uix:NExtractData.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="21, -308, 2814, 8149" DesignTimeScaleFactor="2" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-role='option' parentid='mainLayout' tag='DIV' /&gt;" Guid="74093b8a-8e23-457a-84cb-bcdf1c5b5d6b" InformativeScreenshot="bdc601c28db6dde2261942f7294cb8b8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Beli Paket Internet Online Termurah Maret 2024! | Tokopedia' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                    </uix:NExtractData.Target>
+                  </uix:NExtractData>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SaveRawData - Invoke Workflow File (SaveRawData.xaml)" sap:VirtualizedContainerService.HintSize="450,154" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="SaveRawData.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="sd:DataTable" x:Key="rawData">[dt_pulsaData]</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                  <ui:FileExistsX DisplayName="File Exists" Exists="[fileExist]" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="FileExistsX_3" Path="resources\Toped_scrapping.xlsx" />
+                  <If Condition="[fileExist]" sap:VirtualizedContainerService.HintSize="450,533" sap2010:WorkflowViewState.IdRef="If_3">
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,253" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;File Exist&quot;]" />
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,101" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,170" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Total data : &quot; + dt_pulsaData.RowCount.ToString]" />
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-13, -13, 2966, 1522" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAC4iAAAuIgGq4t2SAAADTUlEQVQ4T62SXUxTBxiGVRKTzWhGlo2bmWgQ9qOp0FrKSuH0HHrOaUeB9py2Hg4gFUPQiI1BZWjUYRDjYAq2tCkFw28JMHDDVqEg4A/Dlhp/Loj/yWTBsGTRC72AQfIO2mTZxS52sTd5b7687/MlX741a/5vkSQZS1KUlySo30k19StJUmGSppL+0x7uaM46lTTjlkpKDKfvJBhCplYQcsKVISdesmZ2y79CSsbFz0oDhUTZvb1Kq1M8xmjY38znDR/9M8zoWB9v43qLfPnpBV6RMrfxktzL2TGRTIGf8xRfE5ZLxwqX9t0WUDKZt2h7VPy8JJzXaB40VIlXhLDQa3nLe40o6BGX8jvEZUsHH+Y7DJ9GAMY+toX/WQuiQwaqVYFvegjo+tNhHTPD4jVBVa9E2sVUkHYCstpkaD0MuLacaa5d/0kEYOhjmuTO7Tj642E8mX2CZ3NP0RhsAN2ThlS7HFa3FcGZYGTedqcV8hoZ9Jd1wd1dpigg1SNpOthZioV3i1iV86ILXkc3an85B00DGZktvF+AwAl4PP0Y3skuyOtkweyurChA8kOCe2RmGNd/ug6L2YJtiduQtuNrNAda4bzbBF+3D2K+iLi4OOhoHebfzYO106GE6vgoYGd9otsx2oBXM7OI3RSL9THrcWDvt3BMeXB2ohqdLX6sxLBpw0a02FsQehFCynlZSGlPiQJUTbvcX56Ohz98FXNP5zDQP4HnNwfwx9B2vH4txeIbD0b99zA5PIVHLx6CPqeBsl4xbeo0RAHKBpkrxS7BF2e2wuLhUDxUjlPudPxZtRa4+THcV+LBew+grP0QFFW7IK2RgrmkuU/bqbjoEeuTXakXkrHj+8+R2SxDxbiAygeH0d2vRbfzK+SOCDCOaJHRnALpd1KoapTIuKTyadzkhghAUZfUmHB6K0ztNFwPK3AhZEPt1EEcD5WDm7CiaEzA/ok8HAoVwTyoR3KNZIk5qzH//alJ5ZK+RMdmHLmxG0dWtpcFONgCfMTcVRr6QQoGvwbGIQaWQNZSlk1XbaCNMVw2H31l9R41rz6udAhn9G7uFNvGndR6V9zHnWQHmEr1QGYl0UufIDvZY5q63MIc1iKaPlgpf2jkuHWr/b8AkgqzsldI7mIAAAAASUVORK5CYII=" InformativeScreenshot="f4f1f91c08b393f736b4c674e6cc4bc9.jpg" Selector="&lt;html app='msedge.exe' title='Beli Paket Internet Online Termurah Maret 2024! | Tokopedia' /&gt;" Title="Beli Paket Internet Online Termurah Maret 2024! | Tokopedia" Url="https://www.tokopedia.com/paket-data/" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </If.Else>
+    </If>
   </Sequence>
 </Activity>
