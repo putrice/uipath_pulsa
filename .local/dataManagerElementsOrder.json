@@ -20,14 +20,15 @@
       "Path": "Toped.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "splitted&Sequence_20",
         "dt_pulsaData&Sequence_1",
-        "splitted&Sequence_15",
         "dt_pulsaData&Sequence_12",
         "fileExist&Sequence_12",
         "rawDataFound&Sequence_1",
         "fileName&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
+        "fileName",
         "rawData"
       ],
       "ConstantsSectionElementsOrder": [],
@@ -40,6 +41,7 @@
         "fileName&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
+        "fileName",
         "rawData"
       ],
       "ConstantsSectionElementsOrder": [],
