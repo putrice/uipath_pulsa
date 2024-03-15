@@ -20,10 +20,28 @@
       "Path": "Toped.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "splitted&Sequence_3",
-        "dt_pulsaData&Sequence_2"
+        "dt_pulsaData&Sequence_1",
+        "splitted&Sequence_15",
+        "dt_pulsaData&Sequence_12",
+        "fileExist&Sequence_12",
+        "rawDataFound&Sequence_1",
+        "fileName&Sequence_1"
       ],
-      "ArgumentsSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "rawData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "SaveRawData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "fileName&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "rawData"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
