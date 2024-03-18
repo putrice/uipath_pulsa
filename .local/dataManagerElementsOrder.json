@@ -41,9 +41,17 @@
         "fileName&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
-        "fileName",
-        "rawData"
+        "arg_fileName",
+        "arg_rawData"
       ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ScrappingRawData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
