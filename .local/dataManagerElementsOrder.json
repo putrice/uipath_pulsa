@@ -3,7 +3,12 @@
     {
       "Path": null,
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "output_fileName&",
+        "dt_result&",
+        "splitted&",
+        "arrayRow&"
+      ],
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
@@ -20,17 +25,13 @@
       "Path": "Toped.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "splitted&Sequence_20",
         "dt_pulsaData&Sequence_1",
         "dt_pulsaData&Sequence_12",
         "fileExist&Sequence_12",
         "rawDataFound&Sequence_1",
         "fileName&Sequence_1"
       ],
-      "ArgumentsSectionElementsOrder": [
-        "fileName",
-        "rawData"
-      ],
+      "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
@@ -52,6 +53,21 @@
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessDataToExcel.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "arrayRow&Sequence_2",
+        "dt_result&Sequence_6",
+        "output_fileName&Sequence_6",
+        "splitted&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "arg_fileName_process"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
